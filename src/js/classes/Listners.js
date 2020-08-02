@@ -19,7 +19,8 @@ export default class Listners {
       const { target } = event;
 
       if (target.classList.contains('goblin')) {
-        document.body.style.cursor = "url('../img/hammer.cur'), pointer";
+        target.style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur') 100 100, auto";
+        //document.body.style.cursor = "url('../img/hammer.cur') 100 100, pointer";
       } else {
         document.body.style.cursor = 'auto';
       }
