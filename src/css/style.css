@@ -1,0 +1,19 @@
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75wh;
+  height: 75vh;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.square {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  border: 2px solid red;
+}
+
+.goblin {
+  height: 100%;
+}
