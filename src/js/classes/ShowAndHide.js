@@ -11,9 +11,6 @@ export default class ShowAndHide {
     this.squareWithGoblin.innerHTML = '';
     Listners.click();
     Listners.mouse();
-    // this.img.addEventListener('click', () => {
-    //   console.log('click');
-    // });
     const timer = setInterval(() => {
       function randomInteger(min, max) {
         return Math.round(Math.random() * (max - min) + min);
@@ -26,8 +23,8 @@ export default class ShowAndHide {
           const lose = document.querySelector('.loses');
           lose.textContent = 1 + +lose.textContent;
           if (lose.textContent === '5') {
-            // alert('Проигрыш');
-            // clearInterval(timer);
+            alert('Проигрыш');
+            clearInterval(timer);
           }
         }
         document.body.style.cursor = 'auto';

@@ -1,5 +1,4 @@
 export default class Listners {
-
   static click() {
     const mainParent = document.querySelector('.game');
     mainParent.addEventListener('click', (event) => {
@@ -11,7 +10,7 @@ export default class Listners {
       }
     });
   }
-  
+
   static mouse() {
     const mainParent = document.querySelector('.game');
 
@@ -19,12 +18,11 @@ export default class Listners {
       const { target } = event;
 
       if (target.classList.contains('goblin')) {
-        target.style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur') 100 100, auto";
-        //document.body.style.cursor = "url('../img/hammer.cur') 100 100, pointer";
+        target.style.cursor = 'url("../img/hammer2.png"), pointer';
       } else {
         document.body.style.cursor = 'auto';
       }
-    }
+    };
 
     mainParent.addEventListener('mouseover', hammer);
     mainParent.addEventListener('mouseout', hammer);
